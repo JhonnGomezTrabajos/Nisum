@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "c9e9f5c6-6ab5-4d78-8e89-0fc7fe07f3e5",
+		"name": "Prueba Nisum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32986280"
+	},
+	"item": [
+		{
+			"name": "RegisterUsers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Pedro Mesa\",\r\n  \"email\": \"usuario@dominio.csl\",\r\n  \"password\": \"Password/12\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"123456789\",\r\n      \"citycode\": \"01\",\r\n      \"contrycode\": \"+56\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
